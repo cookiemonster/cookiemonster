@@ -1,7 +1,7 @@
 ## Hello there 👋
 
 
-- 🔭 I’m currently working on projects for [Dutch Government](https://github.com/SSC-ICT-Innovatie, project at the [Dutch Institute for Vulnerability Disclosure](https://github.com/DIVD-NL).
+- 🔭 I’m currently working on projects for [Dutch Government](https://github.com/SSC-ICT-Innovatie), project at the [Dutch Institute for Vulnerability Disclosure](https://github.com/DIVD-NL).
 - 🌱 I’m currently learning how to write articles.
 - 👯 I’m looking to collaborate on cool projects.
 - 🤔 I’m looking for help with my [website](https://github.com/victorgevers-com/victorgevers.com) because it needs some serious TLC
