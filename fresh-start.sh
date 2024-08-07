@@ -4,7 +4,7 @@
 YESTERDAY=$(date -d "yesterday" '+%Y-%m-%d')
 
 # Directories to be processed
-DIRECTORIES=("$HOME/Downloads" "$HOME/Pictures")
+DIRECTORIES=("$HOME/Downloads" "$HOME/Pictures" "$HOME/Pictures/Screenshots") 
 REPOS=("$HOME/Documents/notes" "$HOME/projects/victorgevers.com")
 
 # Function to move files to a dated directory
