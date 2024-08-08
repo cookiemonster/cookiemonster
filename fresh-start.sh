@@ -1,10 +1,14 @@
 #!/bin/bash
 
+# Fresh start
+# Cleans up cluttering files by moving them in directories with a timestamp
+# Version 0.2
+
 # Get yesterday's date in YYYY-MM-DD format
 YESTERDAY=$(date -d "yesterday" '+%Y-%m-%d')
 
 # Directories to be processed
-DIRECTORIES=("$HOME/Downloads" "$HOME/Pictures" "$HOME/Pictures/Screenshots")
+DIRECTORIES=("$HOME/Downloads" "$HOME/Pictures" "$HOME/Pictures/Screenshots" "$HOME/Desktop")
 REPOS=("$HOME/Documents/notes" "$HOME/projects/victorgevers.com" "$HOME/cookiemonster")  
 
 # Function to move files to a dated directory
