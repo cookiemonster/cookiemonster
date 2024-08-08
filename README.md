@@ -2,11 +2,12 @@
 
 
 - 🔭 I'm currently working on projects at the [Dutch Government](https://github.com/SSC-ICT-Innovatie) and projects at the [Dutch Institute for Vulnerability Disclosure](https://github.com/DIVD-NL).
-- 🌱 I'm currently learning how to write articles.
+- 🌱 I'm currently learning how to write [articles](https://medium.com/@victor_gevers).
 - 👯 I'm looking to collaborate on cool projects.
-- 🤔 I’m looking for help with my [website](https://github.com/victorgevers-com/victorgevers.com) because it needs some serious TLC
+- 🤔 I’m looking for help with my [website](https://github.com/victorgevers-com/victorgevers.com) because it needs some serious TLC.
 - 💬 Ask me about cybersecurity, ethical hacking, AI, Robotics and how to solve issues no one else can solve.
 - 📫 How to reach me: Send me a DM on [X](https://x.com/0xDUDE) or [LinkedIn](https://www.linkedin.com/in/vgevers/).
+- 📰 I curate a [newsletter](https://victorgevers.substack.com/p/a-milestone-in-cyber-security-education) on the topics I'm most passionate about. 
 
 ### Bio (_written by Gemini 1.5 pro_):
 > Victor Gevers is a world-renowned Dutch cybersecurity expert, ethical hacker, and advocate for a safer internet. With over three decades of experience, he has  consistently exposed significant data breaches and vulnerabilities, notably in China. His groundbreaking discoveries include the "[SenseNets](https://www.ft.com/content/9ed9362e-31f7-11e9-bb0c-42459962a812)" facial recognition database used to track the Muslim population in Xinjiang, and the controversial "[BreedReady](http://time.com/5548917/research-china-database-breedready-women/)" database categorizing 1.8 million Chinese women based on their childbearing potential.
