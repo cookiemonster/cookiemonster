@@ -2,3 +2,10 @@ cookiemonster
 Documents/notes
 Pictures/wallpapers
 projects/victorgevers.com
+projects/hnnw
+divd.family
+divd.works/website
+divd.works/staging
+divd.works/HR
+
+
