@@ -1,5 +1,6 @@
 cookiemonster
 Documents/notes
+Documents/Samsara
 Pictures/wallpapers
 projects/victorgevers.com
 projects/hnnw
