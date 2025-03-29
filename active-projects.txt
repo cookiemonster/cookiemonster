@@ -8,5 +8,3 @@ divd.family
 divd.works/website
 divd.works/staging
 divd.works/HR
-
-
