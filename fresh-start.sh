@@ -8,8 +8,20 @@
 YESTERDAY=$(date -d "yesterday" '+%Y-%m-%d')
 
 # Directories to be processed
-DIRECTORIES=("$HOME/Downloads" "$HOME/Pictures" "$HOME/Pictures/Screenshots" "$HOME/Desktop")
-REPOS=("$HOME/Documents/notes" "$HOME/projects/victorgevers.com" "$HOME/cookiemonster")  
+DIRECTORIES=("$HOME/Downloads" "$HOME/Documents" "$HOME/Pictures" "$HOME/Pictures/Screenshots" "$HOME/Desktop")
+REPOS=()
+while IFS= read -r line; do
+  [[ -n "$line" ]] || continue  # Skip empty lines
+
+  # If line is an absolute path, use it as is
+  if [[ "$line" = /* ]]; then
+    REPOS+=("$line")
+  else
+    # Otherwise, assume it's relative to HOME
+    REPOS+=("$HOME/$line")
+  fi
+done < "$HOME/cookiemonster/active-projects.txt"
+# REPOS=("$HOME/Documents/notes" "$HOME/cookiemonster")  
 
 # Function to move files to a dated directory
 move_files() {
