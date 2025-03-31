@@ -1,9 +1,9 @@
 ## Hello there 👋
 
 
-- 🔭 I'm currently working on projects at the [Dutch Government](https://github.com/SSC-ICT-Innovatie) and projects at the [Dutch Institute for Vulnerability Disclosure](https://github.com/DIVD-NL).
+- 🔭 I'm currently working on projects at the [Dutch Government](https://github.com/SSC-ICT-Innovatie) and [projects](https://github.com/SSC-ICT-Innovatie) at the [Dutch Institute for Vulnerability Disclosure](https://github.com/DIVD-NL).
 - 🌱 I'm currently learning how to write [articles](https://medium.com/@victor_gevers).
-- 👯 I'm looking to collaborate on cool projects.
+- 👯 I'm looking to collaborate on cool [projects](https://the.divd.academy/about/projects).
 - 🤔 I’m looking for help with my [website](https://github.com/victorgevers-com/victorgevers.com) because it needs some serious TLC.
 - 💬 Ask me about cybersecurity, ethical hacking, AI, Robotics and how to solve issues no one else can solve.
 - 📫 How to reach me: Send me a DM on [X](https://x.com/0xDUDE) or [LinkedIn](https://www.linkedin.com/in/vgevers/).
