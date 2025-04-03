@@ -12,4 +12,3 @@ ssc-ict/SmileMeter
 ssc-ict/huisstijl.vlam.ai
 ssc-ict/ICY
 ssc-ict/onboarding-app
-
