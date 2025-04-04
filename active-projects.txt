@@ -1,5 +1,5 @@
 cookiemonster
-aivd.us
+aivd/aivd.us
 Documents/notes
 Documents/Samsara
 Pictures/wallpapers
