@@ -1,29 +1,41 @@
 #!/bin/bash
 
 # Fresh start
-# Cleans up cluttering files by moving them in directories with a timestamp
-# Version 0.2
+# Cleans up cluttering files by moving them in directories with a timestamp and pull not existing directories
+# Version 0.4
 
 # Get yesterday's date in YYYY-MM-DD format
 YESTERDAY=$(date -d "yesterday" '+%Y-%m-%d')
 
-# Directories to be processed
-DIRECTORIES=("$HOME/Downloads" "$HOME/Documents" "$HOME/Pictures" "$HOME/Pictures/Screenshots" "$HOME/Desktop")
+# Load directories to organize
+DIRECTORIES=(
+  "$HOME/Downloads"
+  "$HOME/Documents"
+  "$HOME/Pictures"
+  "$HOME/Pictures/Screenshots"
+  "$HOME/Desktop"
+)
+
+# Load active projects
 REPOS=()
 while IFS= read -r line; do
   [[ -n "$line" ]] || continue  # Skip empty lines
 
-  # If line is an absolute path, use it as is
   if [[ "$line" = /* ]]; then
     REPOS+=("$line")
   else
-    # Otherwise, assume it's relative to HOME
     REPOS+=("$HOME/$line")
   fi
 done < "$HOME/cookiemonster/active-projects.txt"
-# REPOS=("$HOME/Documents/notes" "$HOME/cookiemonster")  
 
-# Function to move files to a dated directory
+# Load GitHub sources from file
+GITHUB_SOURCES=()
+while IFS= read -r source; do
+  [[ -n "$source" ]] || continue
+  GITHUB_SOURCES+=("$source")
+done < "$HOME/cookiemonster/github-sources.txt"
+
+# Function to move files to a dated subdirectory
 move_files() {
   local DIR=$1
   local YESTERDAY=$2
@@ -39,9 +51,12 @@ move_files() {
   fi
 }
 
-# Function to check if a git repository is up to date with GitHub and commit changes if necessary
+# Function to check or clone a repository
 check_repo() {
   local REPO=$1
+  local REPO_NAME
+  REPO_NAME=$(basename "$REPO")
+
   if [ -d "$REPO" ]; then
     cd "$REPO" || { echo "Failed to cd into $REPO"; return; }
 
@@ -52,7 +67,7 @@ check_repo() {
       COMMIT_MSG="Auto-commit on $(date '+%Y-%m-%d %H:%M:%S')"
       git commit -m "$COMMIT_MSG"
       git push origin "$(git rev-parse --abbrev-ref HEAD)"
-      echo "Committed and pushed changes to $REPO with message: $COMMIT_MSG"
+      echo "Committed and pushed changes to $REPO"
     fi
 
     # Check for untracked files
@@ -62,7 +77,7 @@ check_repo() {
       COMMIT_MSG="Auto-commit on $(date '+%Y-%m-%d %H:%M:%S')"
       git commit -m "$COMMIT_MSG"
       git push origin "$(git rev-parse --abbrev-ref HEAD)"
-      echo "Committed and pushed changes to $REPO with message: $COMMIT_MSG"
+      echo "Committed and pushed untracked changes to $REPO"
     fi
 
     git fetch origin
@@ -76,24 +91,37 @@ check_repo() {
     elif [ "$LOCAL" = "$BASE" ]; then
       echo "The repository at $REPO needs to pull updates."
       git pull origin "$(git rev-parse --abbrev-ref HEAD)"
-      echo "Pulled updates for $REPO"
     elif [ "$REMOTE" = "$BASE" ]; then
       echo "The repository at $REPO needs to push updates."
     else
       echo "The repository at $REPO has diverged."
     fi
   else
-    echo "The directory $REPO does not exist."
+    echo "The directory $REPO does not exist. Attempting to clone..."
+
+    local CLONED=0
+    for SOURCE in "${GITHUB_SOURCES[@]}"; do
+      GITHUB_URL="https://github.com/$SOURCE/$REPO_NAME.git"
+      echo "Trying $GITHUB_URL..."
+      git clone "$GITHUB_URL" "$REPO" && {
+        echo "Successfully cloned $REPO_NAME from $SOURCE"
+        CLONED=1
+        break
+      }
+    done
+
+    if [ "$CLONED" -eq 0 ]; then
+      echo "❌ Failed to clone $REPO_NAME from any GitHub source."
+    fi
   fi
 }
 
-# Process each directory
+# Organize files
 for DIR in "${DIRECTORIES[@]}"; do
   move_files "$DIR" "$YESTERDAY"
 done
 
-# Check each repository
+# Handle repos
 for REPO in "${REPOS[@]}"; do
   check_repo "$REPO"
 done
-
