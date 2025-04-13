@@ -1,5 +1,6 @@
-cookiemonster
 aivd/aivd.us
+akiko.nl
+cookiemonster
 Documents/notes
 Documents/Samsara
 Pictures/wallpapers
@@ -16,3 +17,4 @@ ssc-ict/SmileMeter
 ssc-ict/huisstijl.vlam.ai
 ssc-ict/ICY
 ssc-ict/onboarding-app
+Securify.IT
