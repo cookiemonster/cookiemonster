@@ -5,6 +5,8 @@ Documents/Samsara
 Pictures/wallpapers
 projects/victorgevers.com
 projects/hnnw
+divd.charity
+divd.community
 divd.family
 divd.works/website
 divd.works/staging
