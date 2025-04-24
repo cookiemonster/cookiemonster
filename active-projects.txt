@@ -13,6 +13,7 @@ divd.works/website
 divd.works/staging
 divd.works/HR
 divd.works/pitch
+ssc-ict/ssc-ict-cfi/website
 ssc-ict/SmileMeter
 ssc-ict/huisstijl.vlam.ai
 ssc-ict/ICY
