@@ -1,19 +1,14 @@
-## Hello there 👋
+### Bio 
+_(Generated with ChatGPT 4o)_
 
-
-- 🔭 I'm currently working on projects at the [Dutch Government](https://github.com/SSC-ICT-Innovatie) and [projects](https://github.com/SSC-ICT-Innovatie) at the [Dutch Institute for Vulnerability Disclosure](https://github.com/DIVD-NL).
-- 🌱 I'm currently learning how to write [articles](https://medium.com/@victor_gevers).
-- 👯 I'm looking to collaborate on cool [projects](https://the.divd.academy/about/projects).
-- 🤔 I’m looking for help with my [website](https://github.com/victorgevers-com/victorgevers.com) because it needs some serious TLC.
-- 💬 Ask me about cybersecurity, ethical hacking, AI, Robotics and how to solve issues no one else can solve.
-- 📫 How to reach me: Send me a DM on [X](https://x.com/0xDUDE) or [LinkedIn](https://www.linkedin.com/in/vgevers/).
-- 📰 I curate a [newsletter](https://victorgevers.substack.com/p/a-milestone-in-cyber-security-education) on the topics I'm most passionate about. 
-
-### Bio (_written by Gemini 1.5 pro_):
 > Victor Gevers is a world-renowned Dutch cybersecurity expert, ethical hacker, and advocate for a safer internet. With over three decades of experience, he has  consistently exposed significant data breaches and vulnerabilities, notably in China. His groundbreaking discoveries include the "[SenseNets](https://www.ft.com/content/9ed9362e-31f7-11e9-bb0c-42459962a812)" facial recognition database used to track the Muslim population in Xinjiang, and the controversial "[BreedReady](http://time.com/5548917/research-china-database-breedready-women/)" database categorizing 1.8 million Chinese women based on their childbearing potential.
 
 >  In 2019, Gevers unearthed a massive data breach compromising the private messages and personal information of [364 million Chinese users](https://www.theverge.com/2019/3/4/18250474/chinese-messages-millions-wechat-qq-yy-data-breach-police) on platforms like [WeChat](https://github.com/cookiemonster/WeChat) and QQ, highlighting the invasive surveillance practices of the Chinese government. This discovery contributed to the subsequent [ban of WeChat](https://securityboulevard.com/2020/09/wechat-banned-tiktok-saved/) in the United States due to national security concerns.
 
 > Featured in episodes [87](https://darknetdiaries.com/episode/87/) and [88](https://darknetdiaries.com/episode/88/) of the [Darknet Diaries podcast](https://darknetdiaries.com) about the 2016 LinkedIn data breach and high-profile incidents around President Trump's Twitter account in 2016 and 2020.
 
-> Today, Gevers is dedicated to nurturing the next generation of cybersecurity professionals. He mentors aspiring IT students through the [DIVD Academy](https://divd.academy/) 's internship program. He leads the research & development department at the [Dutch Institute for Vulnerability Disclosure (DIVD)](https://www.linkedin.com/company/divd-nl/), tirelessly working towards a more secure digital world.
+From 2019 to 2022, Victor served as Chair of the Dutch Institute for Vulnerability Disclosure (DIVD). In this role, he led strategic governance and advocacy efforts, building the institute’s reputation and mission around collaborative and ethical vulnerability disclosure. He engaged with governments, corporations, and civil society to shape responsible security practices. He continued as Head of R&D at DIVD from 2022 to 2025, leading advanced research initiatives in vulnerability research.
+
+In 2025, Victor became the Chief Executive Officer of CSIRT.global —a global, independent, not-for-profit cybersecurity response and research organization. Under his leadership, CSIRT.global tackles overlooked and emerging vulnerabilities through a volunteer-powered model. The organization identifies, triages, and coordinates disclosure of security issues across industries, while also mentoring a new generation of ethical hackers and growing global resilience through public benefit initiatives like the Project Global Universities (PGU). 
+
+Alongside his leadership roles, Victor continues to mentor young talent through the DIVD Academy's internship program, where he helps shape the next generation of ethical hackers and digital defenders, tirelessly working towards a more secure digital world.
